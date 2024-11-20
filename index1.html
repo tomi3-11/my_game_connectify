@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Board Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>5 Fun Board Games</h1>
+            <p>Choose a game and let's play!</p>
+        </header>
+
+        <!-- Game selection buttons -->
+        <section id="game-selection">
+            <button onclick="startGame('word-search')">Word Search</button>
+            <button onclick="startGame('sudoku')">Sudoku</button>
+            <button onclick="startGame('tic-tac-toe')">Tic Tac Toe</button>
+            <button onclick="startGame('memory-match')">Memory Match</button>
+            <button onclick="startGame('connect-four')">Connect Four</button>
+        </section>
+
+        <!-- Game container -->
+        <section id="game-container">
+            <!-- Game content will be inserted here dynamically -->
+        </section>
+
+        <footer>
+            <p>&copy; 2024 5 Fun Board Games. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

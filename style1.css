@@ -1,0 +1,176 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#app {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+#game-selection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Sudoku Styling */
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 5px;
+    margin: 20px;
+}
+
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.sudoku-cell:focus {
+    outline: none;
+    background-color: #e0f7fa;
+}
+
+.sudoku-cell.invalid {
+    background-color: #ffebee;
+}
+
+/* Tic Tac Toe Styling */
+.tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+.tic-tac-toe-cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.tic-tac-toe-cell:hover {
+    background-color: #f0f0f0;
+}
+
+/* Memory Match Styling */
+.memory-match-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px;
+}
+
+.memory-card {
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.memory-card.flipped {
+    background-color: #b2ff59;
+}
+
+/* Connect Four Styling */
+.connect-four-board {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    gap: 5px;
+}
+
+.connect-four-cell {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.connect-four-cell.red {
+    background-color: red;
+}
+
+.connect-four-cell.yellow {
+    background-color: yellow;
+}
