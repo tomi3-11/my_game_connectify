@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connectify - The Friendship Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Connectify!</h1>
+        <p>Get to know your friends better through fun challenges!</p>
+    </header>
+
+    <!-- Profile Form -->
+    <section id="profile-form">
+        <h2>Create Your Profile</h2>
+        <form id="profile">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="dob">Your Birthdate:</label>
+            <input type="date" id="dob" required><br>
+
+            <label for="hobby">Your Favorite Hobby:</label>
+            <input type="text" id="hobby" required><br>
+
+            <label for="food">Your Favorite Food:</label>
+            <input type="text" id="food" required><br>
+
+            <button type="submit">Start Game</button>
+        </form>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" style="display: none;">
+        <div id="chatbox">
+            <div id="wotoro-chat"></div>
+            <input type="text" id="user-input" placeholder="Type your answer..." autofocus>
+            <button id="send-btn">Send</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Connectify. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
